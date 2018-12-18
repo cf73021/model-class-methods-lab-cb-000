@@ -4,6 +4,7 @@ class Boat < ActiveRecord::Base
   has_many    :classifications, through: :boat_classifications
 
   def self.first_five
-    take(5)
+    boats = Boat.all
+    boat.take(5)
   end
 end
