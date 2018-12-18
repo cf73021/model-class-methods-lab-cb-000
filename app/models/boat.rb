@@ -5,6 +5,6 @@ class Boat < ActiveRecord::Base
 
   def self.first_five
     boats = Boat.all
-    boat.take(5)
+    boats.take(5)
   end
 end
